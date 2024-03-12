@@ -1,0 +1,85 @@
+{
+    "configurations": [
+        {
+            "name": "Start zui5.relatorio.base.conhecimento",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "cwd": "${workspaceFolder}/zui5.relatorio.base.conhecimento",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--open",
+                "test/flpSandbox.html#commoovizui5relatoriobaseconhe-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "DEBUG": "--inspect",
+                "FIORI_TOOLS_URL_PARAMS": "sap-client=250&sap-ui-xx-viewCache=false"
+            }
+        },
+        {
+            "name": "Start zui5.relatorio.base.conhecimento Mock",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/zui5.relatorio.base.conhecimento",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-mock.yaml",
+                "--open",
+                "test/flpSandbox.html#commoovizui5relatoriobaseconhe-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-client=250&sap-ui-xx-viewCache=false"
+            }
+        },
+        {
+            "name": "Start zui5.relatorio.base.conhecimento Local",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/zui5.relatorio.base.conhecimento",
+            "runtimeExecutable": "npx",
+            "windows": {
+                "runtimeExecutable": "npx.cmd"
+            },
+            "runtimeArgs": [
+                "fiori",
+                "run"
+            ],
+            "args": [
+                "--config",
+                "./ui5-local.yaml",
+                "--open",
+                "test/flpSandbox.html#commoovizui5relatoriobaseconhe-tile"
+            ],
+            "console": "internalConsole",
+            "internalConsoleOptions": "openOnSessionStart",
+            "outputCapture": "std",
+            "port": 9229,
+            "env": {
+                "FIORI_TOOLS_URL_PARAMS": "sap-client=250&sap-ui-xx-viewCache=false"
+            }
+        }
+    ],
+    "compounds": []
+}
