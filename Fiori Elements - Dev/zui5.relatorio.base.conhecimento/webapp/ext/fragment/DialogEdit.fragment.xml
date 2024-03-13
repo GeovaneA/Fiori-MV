@@ -3,5 +3,5 @@
    xmlns:core="sap.ui.core">
    <Dialog
       id="helloDialog"
-      title="Hello {/Userid}"/>
+      title="Hello"/>
 </core:FragmentDefinition>

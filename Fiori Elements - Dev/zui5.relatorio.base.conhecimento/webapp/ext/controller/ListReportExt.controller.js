@@ -9,13 +9,13 @@ sap.ui.define([
 
         onEdit: function(oEvent) {
             //MessageToast.show("Botão editar");
+                     // alert("teste")
             this._getSelectedRow();
 
             if(this._getModel("modelView").getProperty("/Userid") != undefined )
-                this._onOpenDialog() 
-            // alert("teste")
+                this._onOpenDialog()
             else 
-                MessageToast.show("Nenhum item selecionado")
+                alert("Nenhum item selecionado")
         },
 
         _getModel: function(sModel){
