@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1714989864579_19_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "com.moovi.zui5.relatorio.base.pessoa",
+    "packageName": "",
+    "content": {
+        "property": "liveMode",
+        "newValue": true
+    },
+    "selector": {
+        "id": "com.moovi.zui5.relatorio.base.pessoa::sap.suite.ui.generic.template.ListReport.view.ListReport::zgsacds_rpt_pessoacid--listReportFilter",
+        "idIsLocal": false,
+        "type": "sap.ui.comp.smartfilterbar.SmartFilterBar"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/com.moovi.zui5.relatorio.base.pessoa/changes/",
+    "projectId": "",
+    "creation": 1714989864579,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.114.0",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}
