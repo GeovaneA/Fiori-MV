@@ -1,8 +1,7 @@
 sap.ui.define([
-    "sap/m/MessageToast",
     "sap/ui/core/Fragment",
     "sap/ui/core/mvc/Controller"
-], function(MessageToast) {
+], function(Fragment) {
     'use strict';
 
     return {
@@ -52,7 +51,12 @@ sap.ui.define([
         },
 
         onSave: function(){
-            this._getModel().setProperty(this.sPath + "/Idperson", this._getModel("modelView").getProperty("/Idperson"));
+            this._getModel().setProperty(this.sPath + "/Fullname", this._getModel("modelView").getProperty("/Fullname"));
+
+            this._getModel().submitChanges();
+            this._getModel().refresh();
+
+            this.onClose();
         },
 
         onClose: function(){
